@@ -1,0 +1,38 @@
+[
+	{
+		"language": "en",
+		"questionAndAnswers": [{
+			"question": "Which person is on the front of a 500kn banknote?",
+			"answers": ["Marko Marulić", "Ivan Ivić", "Tin Ujević", "Nikola Tesla"],
+			"correctAnswerId": 0
+		},
+		{
+			"question": "Which person is on the front of a 20kn banknote?",
+			"answers": ["Ban J. Jelačić", "Slavoljub Penkala", "Ruđer Bošković", "Ivo Sanader"],
+			"correctAnswerId": 0
+		},
+		{
+			"question": "Which person is on the front of a 100kn banknote?",
+			"answers": ["Ljudevit Gaj", "Ivan Mažuranić", "Stjepan Radić", "Antun Mihanović"],
+			"correctAnswerId": 1
+		}]
+	},
+	{
+		"language": "hr-HR",
+		"questionAndAnswers": [{
+			"question": "Koja se osoba nalazi na prednjoj strani novčanice od 500kn?",
+			"answers": ["Marko Marulić", "Ivan Ivić", "Tin Ujević", "Nikola Tesla"],
+			"correctAnswerId": 0
+		},
+		{
+			"question": "Koja se osoba nalazi na prednjoj strani novčanice od 20kn?",
+			"answers": ["Ban J. Jelačić", "Slavoljub Penkala", "Ruđer Bošković", "Ivo Sanader"],
+			"correctAnswerId": 0
+		},
+		{
+			"question": "Koja se osoba nalazi na prednjoj strani novčanice od 100kn?",
+			"answers": ["Ljudevit Gaj", "Ivan Mažuranić", "Stjepan Radić", "Antun Mihanović"],
+			"correctAnswerId": 1
+		}]
+	}
+]

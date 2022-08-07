@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: hr-HR
   m_SharedData: {fileID: 11400000, guid: bbaf7a1406b144b4abd25cea07e02145, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 2021694192316055624
   m_TableData:
   - m_Id: 92597583872
     m_Localized: "Pro\u0161irena stvarnost"
@@ -34,6 +35,29 @@ MonoBehaviour:
     m_Localized: Kviz
     m_Metadata:
       m_Items: []
+  - m_Id: 1486598583549952
+    m_Localized: "Sa\u017Eetak"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1488722839142400
+    m_Localized: 'Odgovorenih pitanja: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 2021694192316055624
+  - m_Id: 1489089224179712
+    m_Localized: "To\u010Dnih odgovora: {0}"
+    m_Metadata:
+      m_Items:
+      - rid: 2021694192316055624
+  - m_Id: 1489166000914432
+    m_Localized: "Postotak to\u010Dnih odgovora: {0}%"
+    m_Metadata:
+      m_Items:
+      - rid: 2021694192316055624
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2021694192316055624
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0000ff4bfc49050000003f9a514a050000007f7a634a0500

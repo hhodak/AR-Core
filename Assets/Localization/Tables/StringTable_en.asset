@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: bbaf7a1406b144b4abd25cea07e02145, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 2021694192316055625
   m_TableData:
   - m_Id: 92597583872
     m_Localized: Augmented reality
@@ -34,6 +35,29 @@ MonoBehaviour:
     m_Localized: Quiz
     m_Metadata:
       m_Items: []
+  - m_Id: 1486598583549952
+    m_Localized: Summary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1488722839142400
+    m_Localized: 'Questions answered: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 2021694192316055625
+  - m_Id: 1489089224179712
+    m_Localized: 'Correct answers: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 2021694192316055625
+  - m_Id: 1489166000914432
+    m_Localized: 'Percentage of correct answers: {0}%'
+    m_Metadata:
+      m_Items:
+      - rid: 2021694192316055625
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 2021694192316055625
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00007f7a634a050000003f9a514a05000000ff4bfc490500
