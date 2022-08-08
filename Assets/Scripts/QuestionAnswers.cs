@@ -8,6 +8,7 @@ public class QuestionAnswers
     public int correctAnswerId;
 }
 
+[System.Serializable]
 public class QuestionsAndAnswers
 {
     public string language;

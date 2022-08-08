@@ -661,7 +661,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99cd58e51fab2e245b3c07b622175692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionAndAnswers: []
+  questionsAndAnswers:
+  - language: en
+    questionAndAnswers:
+    - question: Which person is on the front of a 500kn banknote?
+      answers:
+      - "Marko Maruli\u0107"
+      - "Ivan Ivi\u0107"
+      - "Tin Ujevi\u0107"
+      - Nikola Tesla
+      correctAnswerId: 0
+    - question: Which person is on the front of a 20kn banknote?
+      answers:
+      - "Ban J. Jela\u010Di\u0107"
+      - Slavoljub Penkala
+      - "Ru\u0111er Bo\u0161kovi\u0107"
+      - Ivo Sanader
+      correctAnswerId: 0
+    - question: Which person is on the front of a 100kn banknote?
+      answers:
+      - Ljudevit Gaj
+      - "Ivan Ma\u017Eurani\u0107"
+      - "Stjepan Radi\u0107"
+      - "Antun Mihanovi\u0107"
+      correctAnswerId: 1
+  - language: hr-HR
+    questionAndAnswers:
+    - question: "Koja se osoba nalazi na prednjoj strani nov\u010Danice od 500kn?"
+      answers:
+      - "Marko Maruli\u0107"
+      - "Ivan Ivi\u0107"
+      - "Tin Ujevi\u0107"
+      - Nikola Tesla
+      correctAnswerId: 0
+    - question: "Koja se osoba nalazi na prednjoj strani nov\u010Danice od 20kn?"
+      answers:
+      - "Ban J. Jela\u010Di\u0107"
+      - Slavoljub Penkala
+      - "Ru\u0111er Bo\u0161kovi\u0107"
+      - Ivo Sanader
+      correctAnswerId: 0
+    - question: "Koja se osoba nalazi na prednjoj strani nov\u010Danice od 100kn?"
+      answers:
+      - Ljudevit Gaj
+      - "Ivan Ma\u017Eurani\u0107"
+      - "Stjepan Radi\u0107"
+      - "Antun Mihanovi\u0107"
+      correctAnswerId: 1
   options:
   - {fileID: 195259598}
   - {fileID: 1429214334}

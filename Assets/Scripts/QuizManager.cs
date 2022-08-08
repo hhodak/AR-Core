@@ -9,9 +9,9 @@ using UnityEngine.Localization;
 
 public class QuizManager : MonoBehaviour
 {
-    string path = "Assets/Database/QuestionsAndAnswers.json";
+    private List<QuestionAnswers> questionAnswers;
+    public List<QuestionsAndAnswers> questionsAndAnswers;
 
-    public List<QuestionAnswers> questionAndAnswers;
     public GameObject[] options;
     public int currentQuestion;
     public Text questionText;
@@ -32,7 +32,7 @@ public class QuizManager : MonoBehaviour
     {
         ResetQuiz();
         LoadQuestionsAndAnswers();
-        questions = questionAndAnswers.Count;
+        questions = questionAnswers.Count;
         GenerateQuestion();
     }
 
@@ -46,7 +46,7 @@ public class QuizManager : MonoBehaviour
 
     public void NextQuestion()
     {
-        questionAndAnswers.RemoveAt(currentQuestion);
+        questionAnswers.RemoveAt(currentQuestion);
         GenerateQuestion();
     }
 
@@ -55,9 +55,9 @@ public class QuizManager : MonoBehaviour
         for (int i = 0; i < options.Length; i++)
         {
             options[i].GetComponent<Answer>().isCorrect = false;
-            options[i].transform.GetChild(0).GetComponent<Text>().text = questionAndAnswers[currentQuestion].answers[i];
+            options[i].transform.GetChild(0).GetComponent<Text>().text = questionAnswers[currentQuestion].answers[i];
 
-            if (questionAndAnswers[currentQuestion].correctAnswerId == i)
+            if (questionAnswers[currentQuestion].correctAnswerId == i)
             {
                 options[i].GetComponent<Answer>().isCorrect = true;
             }
@@ -66,10 +66,10 @@ public class QuizManager : MonoBehaviour
 
     void GenerateQuestion()
     {
-        if (questionAndAnswers.Count > 0)
+        if (questionAnswers.Count > 0)
         {
-            currentQuestion = Random.Range(0, questionAndAnswers.Count);
-            questionText.text = questionAndAnswers[currentQuestion].question;
+            currentQuestion = Random.Range(0, questionAnswers.Count);
+            questionText.text = questionAnswers[currentQuestion].question;
             SetAnswers();
         }
         else
@@ -79,16 +79,12 @@ public class QuizManager : MonoBehaviour
     }
     private void LoadQuestionsAndAnswers()
     {
-        if (File.Exists(path))
+        for (int i = 0; i < questionsAndAnswers.Count; i++)
         {
-            List<QuestionsAndAnswers> QnA = JsonConvert.DeserializeObject<List<QuestionsAndAnswers>>(File.ReadAllText(path));
-            for (int i = 0; i < QnA.Count; i++)
+            if (questionsAndAnswers[i].language == LocalizationSettings.SelectedLocale.Identifier.Code)
             {
-                if (QnA[i].language == LocalizationSettings.SelectedLocale.Identifier.Code)
-                {
-                    questionAndAnswers = QnA[i].questionAndAnswers;
-                    break;
-                }
+                questionAnswers = questionsAndAnswers[i].questionAndAnswers;
+                break;
             }
         }
     }
